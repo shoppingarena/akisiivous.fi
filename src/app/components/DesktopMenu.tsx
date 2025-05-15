@@ -65,12 +65,7 @@ export default function DesktopMenu({
                 ))}
             </ul>
 
-            {/* Right side CTA button */}
-            <div>
-                <button className="bg-red-600 hover:bg-teal-600 text-white px-8 py-2 rounded-md font-bold">
-                    Tilaa siivous
-                </button>
-            </div>
+
         </div>
 
     );
