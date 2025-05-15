@@ -139,7 +139,18 @@ export function Call() {
     return (
         <ImageComponent
             src="/icons-animated/24-hours.png"
-            alt="Ikkunat siivous"
+            alt="24-tuntia siivous"
+            width={35}
+            height={35}
+            unoptimized={false}
+        />
+    );
+}
+export function WhatsApp() {
+    return (
+        <ImageComponent
+            src="/icons-animated/whatsapp.png"
+            alt="WhatsApp"
             width={35}
             height={35}
             unoptimized={false}

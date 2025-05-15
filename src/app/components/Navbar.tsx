@@ -7,22 +7,28 @@ import Info from './Info';
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 
+// Define types for nav items
+interface NavItem {
+    name: string;
+    href: string;
+    hasDropdown?: boolean; // optional property
+}
+
+
 export default function Navbar() {
     // State management in parent component
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
     // Main navigation items - shared data
-    const navItems = [
-        //{ name: "Home", href: "/" },
-        { name: "Meistä", href: "/meistä" },
+    const navItems: NavItem[] = [
+        { name: "Meistä", href: "/meista" },
         { name: "Palvelut", href: "#", hasDropdown: true },
-        // { name: "Hinnasto", href: "/hinnasto" },
         { name: "Yhteystiedot", href: "/yhteystiedot" },
     ];
 
     // Services submenu items - shared data
-    const serviceItems = [
+    const serviceItems: NavItem[] = [
         { name: "Kotisiivoukset", href: "/#kotisiivoukset" },
         { name: "Ikkunat", href: "/#ikkunat" },
         { name: "Erikoissiivoukset", href: "/#erikoissiivoukset" },
@@ -35,7 +41,7 @@ export default function Navbar() {
     ];
 
     // Shared function for scrolling to sections
-    const scrollToSection = (sectionId) => {
+    const scrollToSection = (sectionId: string): void => {
         const element = document.getElementById(sectionId);
         if (element) {
             // Close menus
@@ -52,7 +58,7 @@ export default function Navbar() {
     return (
         <>
             <Info />
-            <nav className="w-full px-4 py-4 bg-lime-500 bg-opacity-90 sticky top-15 shadow z-50">
+            <nav className="w-full px-4 py-4 bg-lime-500 bg-opacity-90 sticky top-[60px] shadow z-50">
                 <div className="container mx-auto flex items-center justify-between text-slate-800 relative">
                     {/* LEFT: Logo */}
                     <div className="flex-shrink-0">
@@ -63,15 +69,15 @@ export default function Navbar() {
                     </div>
 
                     {/* CENTER: Desktop menu */}
-                    <div className="hidden lg:flex justify-center flex-grow">
-                        <DesktopMenu
-                            isServicesDropdownOpen={isServicesDropdownOpen}
-                            setIsServicesDropdownOpen={setIsServicesDropdownOpen}
-                            navItems={navItems}
-                            serviceItems={serviceItems}
-                            scrollToSection={scrollToSection}
-                        />
-                    </div>
+
+                    <DesktopMenu
+                        isServicesDropdownOpen={isServicesDropdownOpen}
+                        setIsServicesDropdownOpen={setIsServicesDropdownOpen}
+                        navItems={navItems}
+                        serviceItems={serviceItems}
+                        scrollToSection={scrollToSection}
+                    />
+
 
                     {/* RIGHT: CTA (desktop only) and Mobile menu toggle */}
                     <div className="flex items-center gap-4">
@@ -82,8 +88,10 @@ export default function Navbar() {
                             </button>
                         </div>
                         {/* MOBILE: hamburger */}
-                        <div className="flex-shrink-0 z-10 lg:hidden">
-                            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                        <div className="md:hidden">
+                            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle mobile menu"
+                                aria-expanded={isMobileMenuOpen}>
+
                                 <svg width="40" height="40" viewBox="0 0 24 24" className="fill-white stroke-white">
                                     <path d="M20 7.125L4 7.125C3.37868 7.125 2.875 6.62132 2.875 6C2.875 5.37868 3.37868 4.875 4 4.875L20 4.875C20.6213 4.875 21.125 5.37868 21.125 6C21.125 6.62132 20.6213 7.125 20 7.125ZM20 13.125L4 13.125C3.37868 13.125 2.875 12.6213 2.875 12C2.875 11.3787 3.37868 10.875 4 10.875L20 10.875C20.6213 10.875 21.125 11.3787 21.125 12C21.125 12.6213 20.6213 13.125 20 13.125ZM20 19.125L4 19.125C3.37868 19.125 2.875 18.6213 2.875 18C2.875 17.3787 3.37868 16.875 4 16.875L20 16.875C20.6213 16.875 21.125 17.3787 21.125 18C21.125 18.6213 20.6213 19.125 20 19.125Z" />
                                 </svg>

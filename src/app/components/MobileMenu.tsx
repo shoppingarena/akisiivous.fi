@@ -2,6 +2,7 @@
 "use client";
 import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
+import { CleanHome } from "../components/icons"
 
 interface NavItem {
     name: string;
@@ -35,9 +36,9 @@ export default function MobileMenu({
 }: MobileMenuProps) {
     return (
         <div className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
-            <div className="flex items-center border-b pb-4">
+            <div className="flex items-center pb-4">
                 <Link href="/" className="font-bold text-xl text-red-600 pt-4 ps-4">
-                    HOME
+                    <CleanHome />
                 </Link>
                 <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4 text-slate-600 hover:text-red-500">
                     {/* Close Icon */}
@@ -48,12 +49,12 @@ export default function MobileMenu({
             </div>
             <ul className="flex flex-col h-full gap-4 p-4">
                 {navItems.map((item, idx) => (
-                    <li key={idx} className="text-lg text-slate-600 hover:text-red-500">
+                    <li key={idx} className="text-lg text-slate-600 hover:text-teal-600">
                         {item.hasDropdown ? (
                             <div>
                                 <button
                                     onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-                                    className="flex items-center justify-between w-full"
+                                    className="flex items-center justify-between w-full cursor-pointer"
                                 >
                                     {item.name}
                                     <svg className={`w-4 h-4 transition-transform ${isServicesDropdownOpen ? 'rotate-180' : ''}`}
@@ -64,15 +65,17 @@ export default function MobileMenu({
                                 {isServicesDropdownOpen && (
                                     <ul className="pl-4 mt-2 space-y-2 text-base">
                                         {serviceItems.map((service, serviceIdx) => (
-                                            <li key={serviceIdx} className="hover:text-red-500">
-                                                <button
+                                            <li key={serviceIdx}>
+                                                <Link
+                                                    href={service.href}
+                                                    className="block w-full text-left text-slate-600 hover:text-teal-600"
                                                     onClick={() => {
-                                                        const sectionId = service.href.split('#')[1];
-                                                        scrollToSection(sectionId);
+                                                        setIsOpen(false); // close mobile menu
+                                                        setIsServicesDropdownOpen(false); // optional: close dropdown
                                                     }}
                                                 >
                                                     {service.name}
-                                                </button>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>

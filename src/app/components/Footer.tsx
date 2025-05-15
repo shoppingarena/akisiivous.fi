@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import { WhatsApp } from '../components/icons'
 
 export default function Footer() {
     return (
@@ -8,7 +9,7 @@ export default function Footer() {
                 target="_blank"
                 className="fixed bottom-4 right-4 bg-[#25D366] text-white rounded-md px-6 py-3 font-medium z-50 transition-all hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
-                Chat on WhatsApp
+                <WhatsApp />
             </a>
 
             <footer className="bg-teal-600 text-white py-12">
