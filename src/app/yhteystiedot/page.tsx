@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import { Spray } from '../components/icons'
 
 export default function ContactPage() {
     return (

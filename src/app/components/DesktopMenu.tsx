@@ -23,8 +23,6 @@ interface DesktopMenuProps {
 }
 
 export default function DesktopMenu({
-    isServicesDropdownOpen,
-    setIsServicesDropdownOpen,
     navItems,
     serviceItems,
     scrollToSection

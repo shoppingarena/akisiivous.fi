@@ -1,8 +1,7 @@
 "use client"
-import { useEffect, useRef } from 'react';
+import React from "react";
 
 const ScrollMenu = () => {
-    const sections = useRef([]);
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);

@@ -2,11 +2,11 @@
   "name": "akisiivous.fi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "node server.mjs",
+    "start": "NODE_ENV=production node server.mjs",
     "lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
