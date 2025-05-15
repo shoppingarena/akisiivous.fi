@@ -1,0 +1,94 @@
+// /components/MobileMenu.tsx
+"use client";
+import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
+
+interface NavItem {
+    name: string;
+    href: string;
+    hasDropdown?: boolean;
+}
+
+interface ServiceItem {
+    name: string;
+    href: string;
+}
+
+interface MobileMenuProps {
+    isOpen: boolean;
+    setIsOpen: Dispatch<SetStateAction<boolean>>;
+    isServicesDropdownOpen: boolean;
+    setIsServicesDropdownOpen: Dispatch<SetStateAction<boolean>>;
+    navItems: NavItem[];
+    serviceItems: ServiceItem[];
+    scrollToSection: (sectionId: string) => void;
+}
+
+export default function MobileMenu({
+    isOpen,
+    setIsOpen,
+    isServicesDropdownOpen,
+    setIsServicesDropdownOpen,
+    navItems,
+    serviceItems,
+    scrollToSection
+}: MobileMenuProps) {
+    return (
+        <div className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
+            <div className="flex items-center border-b pb-4">
+                <Link href="/" className="font-bold text-xl text-red-600 pt-4 ps-4">
+                    HOME
+                </Link>
+                <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4 text-slate-600 hover:text-red-500">
+                    {/* Close Icon */}
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <ul className="flex flex-col h-full gap-4 p-4">
+                {navItems.map((item, idx) => (
+                    <li key={idx} className="text-lg text-slate-600 hover:text-red-500">
+                        {item.hasDropdown ? (
+                            <div>
+                                <button
+                                    onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+                                    className="flex items-center justify-between w-full"
+                                >
+                                    {item.name}
+                                    <svg className={`w-4 h-4 transition-transform ${isServicesDropdownOpen ? 'rotate-180' : ''}`}
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                {isServicesDropdownOpen && (
+                                    <ul className="pl-4 mt-2 space-y-2 text-base">
+                                        {serviceItems.map((service, serviceIdx) => (
+                                            <li key={serviceIdx} className="hover:text-red-500">
+                                                <button
+                                                    onClick={() => {
+                                                        const sectionId = service.href.split('#')[1];
+                                                        scrollToSection(sectionId);
+                                                    }}
+                                                >
+                                                    {service.name}
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
+                        ) : (
+                            <Link href={item.href} onClick={() => setIsOpen(false)}>
+                                {item.name}
+                            </Link>
+                        )}
+                    </li>
+                ))}
+                <li className="mt-4">
+                    <button className="bg-red-600 text-white px-8 py-2 rounded-md hover:bg-red-500 font-bold">Tilaa siivous</button>
+                </li>
+            </ul>
+        </div>
+    );
+}
