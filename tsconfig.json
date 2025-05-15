@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": "akisiivous.fi/",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/components/*": [
+        "./src/app/components/*"
+      ]
+    },
     "target": "ES2017",
     "lib": [
       "dom",
