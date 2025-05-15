@@ -2,8 +2,10 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { ThemeProvider } from './components/ThemeProvider'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 // These styles apply to every route in the application
 import './globals.css'
+
 
 export const metadata: Metadata = {
     title: 'Siivouspalvelut | akisiivous.fi',
@@ -21,7 +23,7 @@ export default function RootLayout({
                 <ThemeProvider>
                     <Navbar />
                     <main className="flex-grow p-4 overflow-y-auto">{children}</main>
-
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>
