@@ -1,6 +1,6 @@
 // 1. First, let's update tailwind.config.js to enable dark mode
 // tailwind.config.js
-module.exports = {
+export default {
     content: [
         './src/app/**/*.{js,ts,jsx,tsx}',
         './src/app/components/**/*.{js,ts,jsx,tsx}',
