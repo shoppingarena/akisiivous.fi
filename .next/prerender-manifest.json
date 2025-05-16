@@ -1,30 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/yhteystiedot": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/yhteystiedot",
-      "dataRoute": "/yhteystiedot.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/Nav": {
       "experimentalBypassFor": [
         {
@@ -96,13 +72,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/yhteystiedot": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/yhteystiedot",
+      "dataRoute": "/yhteystiedot.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "15937ea17471a5162e06c0359faee43f",
-    "previewModeSigningKey": "280aa9e5b77a5df55022f8fe6f5090b5e95fdf57c54da6ae683abf078db61eea",
-    "previewModeEncryptionKey": "b5f645fe2a71413344276f7fe4c0b5a7a925cc8ef96611a43ac719fa6d745be0"
+    "previewModeId": "73e3b8ced0e8ff032677237763e6036c",
+    "previewModeSigningKey": "1a85c8dcc6fbeb360c1b9ff19a02b9fa8806fa13569e2611e0d3cd450cf85921",
+    "previewModeEncryptionKey": "21975a5714c8e1cc426b83339a88d2513e1eec45db0aeed34587edfeca5988b2"
   }
 }
