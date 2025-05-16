@@ -142,7 +142,7 @@ export function Call() {
             alt="24-tuntia siivous"
             width={35}
             height={35}
-            unoptimized={false}
+            unoptimized={true}
         />
     );
 }
@@ -153,7 +153,7 @@ export function WhatsApp() {
             alt="WhatsApp"
             width={35}
             height={35}
-            unoptimized={false}
+            unoptimized={true}
         />
     );
 }
