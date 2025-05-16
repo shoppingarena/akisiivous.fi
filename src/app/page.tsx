@@ -11,9 +11,7 @@ export default function Home() {
                     <section id="kotisiivoukset" className="pt-32 pb-24 bg-gradient-to-r from-teal-600 to-lime-500">
                         <div className="text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                             <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold text-white mb-8">Kotisiivoukset</h1>
-                            <p className="text-xl text-white opacity-90 mb-12 max-w-3xl mx-auto">
-                                `&quot;`Haluatko säästää aikaa ja energiaa kotisiivouksesta?  Tarjoamme ammattimaisia puhdistuspalveluita, joilla varmistamme, että kotisi pysyy aina puhtana ja kunnossa. Kotisiivoukset on helpointa luottaa asiantuntijoille – pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!`&quot;`
-                            </p>
+                            <p className="text-xl text-white opacity-90 mb-12 max-w-3xl mx-auto">Haluatko säästää aikaa ja energiaa kotisiivouksesta?  Tarjoamme ammattimaisia puhdistuspalveluita, joilla varmistamme, että kotisi pysyy aina puhtana ja kunnossa. Kotisiivoukset on helpointa luottaa asiantuntijoille – pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!</p>
                             <a href="https://wa.me/+358445031813" target="_blank"
                                 className="bg-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:text-white hover:bg-teal-600 transition duration-300">Tilaa siivous</a>
                         </div>
