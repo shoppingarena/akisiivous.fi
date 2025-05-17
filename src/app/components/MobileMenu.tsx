@@ -32,6 +32,7 @@ export default function MobileMenu({
     setIsServicesDropdownOpen,
     navItems,
     serviceItems,
+    scrollToSection
 }: MobileMenuProps) {
     return (
         <div className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
@@ -71,6 +72,8 @@ export default function MobileMenu({
                                                     onClick={() => {
                                                         setIsOpen(false); // close mobile menu
                                                         setIsServicesDropdownOpen(false); // optional: close dropdown
+                                                        const sectionId = service.href.split("#")[1];
+                                                        scrollToSection(sectionId);
                                                     }}
                                                 >
                                                     {service.name}

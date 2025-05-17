@@ -48,9 +48,12 @@ export default function Navbar() {
             setIsMobileMenuOpen(false);
             setIsServicesDropdownOpen(false);
 
-            // Scroll to section with offset for the navbar
-            const navbarHeight = 100; // Approximate height of your navbar
-            const y = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+            // Get the actual height of the navbar element
+            const navbarHeight = 138; // Fallback to 138 if not found
+
+            // Calculate scroll position with offset for sticky navbar and desired gap
+            const y = element.getBoundingClientRect().top + navbarHeight + 5; // Add 5px gap
+
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
     };
