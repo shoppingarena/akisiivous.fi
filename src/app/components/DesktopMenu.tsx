@@ -63,7 +63,8 @@ export default function DesktopMenu({
                                         <Link
                                             href={service.href}
                                             key={serviceIdx}
-                                            onClick={() => {
+                                            onClick={(e) => {
+                                                e.preventDefault(); // 🛑 Stop native anchor scrolling
                                                 const sectionId = service.href.split("#")[1];
                                                 scrollToSection(sectionId);
                                             }}

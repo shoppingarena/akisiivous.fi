@@ -69,7 +69,8 @@ export default function MobileMenu({
                                                 <Link
                                                     href={service.href}
                                                     className="block w-full text-left text-slate-600 hover:text-teal-600"
-                                                    onClick={() => {
+                                                    onClick={(e) => {
+                                                        e.preventDefault(); // 🛑 Stop native anchor scrolling
                                                         setIsOpen(false); // close mobile menu
                                                         setIsServicesDropdownOpen(false); // optional: close dropdown
                                                         const sectionId = service.href.split("#")[1];

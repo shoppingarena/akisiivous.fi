@@ -44,19 +44,13 @@ export default function Navbar() {
     const scrollToSection = (sectionId: string): void => {
         const element = document.getElementById(sectionId);
         if (element) {
-            // Close menus
-            setIsMobileMenuOpen(false);
-            setIsServicesDropdownOpen(false);
-
-            // Get the actual height of the navbar element
-            const navbarHeight = 138; // Fallback to 138 if not found
-
-            // Calculate scroll position with offset for sticky navbar and desired gap
-            const y = element.getBoundingClientRect().top + navbarHeight + 5; // Add 5px gap
+            const yOffset = -133; // 138 (navbar height) - 5px visual gap
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
     };
+
 
     return (
         <>
