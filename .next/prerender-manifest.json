@@ -1,30 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/Nav": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/Nav",
-      "dataRoute": "/Nav.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -73,6 +49,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/Nav": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/Nav",
+      "dataRoute": "/Nav.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/yhteystiedot": {
       "experimentalBypassFor": [
         {
@@ -101,8 +101,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "73e3b8ced0e8ff032677237763e6036c",
-    "previewModeSigningKey": "1a85c8dcc6fbeb360c1b9ff19a02b9fa8806fa13569e2611e0d3cd450cf85921",
-    "previewModeEncryptionKey": "21975a5714c8e1cc426b83339a88d2513e1eec45db0aeed34587edfeca5988b2"
+    "previewModeId": "e8986326a8b9710df907d3ceee43bd2e",
+    "previewModeSigningKey": "51cb9a174cf4c9a806f148e1db518b44d12673d991aeed76955070f0659a8fcb",
+    "previewModeEncryptionKey": "cfa74784a494921b98732b4af093af9871fd801062e527530c9bfd6356857c3f"
   }
 }

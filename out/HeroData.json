@@ -1,0 +1,77 @@
+[
+    {
+        "section_id": "1",
+        "title": "Kotisiivoukset",
+        "text": "Haluatko säästää aikaa ja energiaa kotisiivouksesta? Tarjoamme ammattimaisia siivouspalveluita, joilla varmistamme, että kotisi pysyy aina puhtaana ja kunnossa. Kotisiivoukset ovat helpointa luottaa asiantuntijoille – pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!",
+        "id": "siivous",
+        "service_title": "Siivouspalvelut"
+    },
+    [
+        {
+            "service_id": "kotisiivoukset",
+            "icon": "Duster",
+            "service_name": "Kotisiivoukset",
+            "description": "Kodin puhtaana pitäminen on tärkeää, mutta aina siihen ei itse pysty tai ehdi. Tarjoamme nopeaa ja tehokasta siivousta kodin kaikille pinnoille kevyestä viikkosiivouksesta perusteelliseen puhdistukseen. Pyydä tarjous ja vakuuttaudu puhtauden palautumisesta tänään!"
+        },
+        {
+            "service_id": "ikkunat",
+            "icon": "WindowCleaningIcon",
+            "service_name": "Ikkunat",
+            "description": "Ikkunoiden peseminen on keskeinen osa kotisiivouksia. Tarjoamme nopeaa ja tehokasta puhdistusta, joka poistaa lian ja kirkastaa ikkunat. Ikkunoiden siivous on helpointa luottaa ammattilaisille – kysy rohkeasti tarjouksista!"
+        },
+        {
+            "service_id": "toimistosiivoukset",
+            "icon": "Trolley",
+            "service_name": "Liiketila- ja toimistosiivoukset",
+            "description": "Liiketilojen ja toimistojen puhtaus ja hygieenisyys on tärkeä toiminnan sujuvuudelle. Tarjoamme ammattimaisia siivouspalveluita, jotka huolehtivat tilojen puhtaudesta ja tasokkaasta hygieniasta. Pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!"
+        }
+    ],
+    {
+        "section_id": "2",
+        "title": "Remontin loppusiivoukset",
+        "text": "Remontin loppusiivous on kriittisen tärkeä vaihe sille, että tila on täysin valmis käyttöön. Tarjoamme ammattimaisia siivouspalveluita, jotka huolehtivat puhtaudesta tilassa kuin tilassa. Pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!",
+        "id": "siivous",
+        "service_title": "Siivouspalvelut"
+    },
+    [
+        {
+            "service_id": "remonttisiivoukset",
+            "icon": "Cleaning",
+            "service_name": "Remontin loppusiivoukset",
+            "description": "Remontin loppusiivous on kriittisen tärkeä vaihe sille, että tila on täysin valmis käyttöön. Tarjoamme ammattimaisia siivouspalveluita, jotka huolehtivat puhtaudesta tilassa kuin tilassa. Pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!"
+        },
+        {
+            "service_id": "muuttosiivoukset",
+            "icon": "Tools",
+            "service_name": "Muuttosiivoukset",
+            "description": "Muuttosiivous on helpointa luottaa ammattilaisille, jotka huolehtivat siivouksesta muuttopäivänä. Tarjoamme kattavan siivouspalvelun, joka varmistaa, että vanha asuntosi jää tahrattomaksi lähtiessäsi kohti tulevaa. Tai jos haluat uuden kotisi puhtaana ja raikkaana käyttöön, me huolehdimme siitä. Pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!"
+        },
+        {
+            "service_id": "desinfiointi",
+            "icon": "Vacuum",
+            "service_name": "Desinfioinnit ja pikasiivoukset",
+            "description": "Desinfiointi ja pikasiivous ovat ratkaisuja nopeaan ja tehokkaaseen puhdistukseen kun tarvitset pikaisesti apua kodin tai toimitilan siivoukseen. Tarjoamme nopeaa ja tehokasta siivouspalvelua, joka huolehtii korkeatasoisesti puhtaudesta milloin vain tarvitset. Pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!"
+        }
+    ],
+    {
+        "section_id": "3",
+        "title": "Ikkunat",
+        "text": "Ikkunoiden peseminen on keskeinen osa kotisiivouksia. Tarjoamme nopeaa ja tehokasta puhdistusta, joka poistaa lian ja kirkastaa ikkunat. Ikkunoiden siivous on helpointa luottaa ammattilaisille – kysy rohkeasti tarjouksista!",
+        "id": "siivous",
+        "service_title": "Siivouspalvelut"
+    },
+    [
+        {
+            "service_id": "erikoissiivoukset",
+            "icon": "Spray",
+            "service_name": "Erikoissiivoukset",
+            "description": "Tarjoamme erikoissiivouksia rajattuihin erikoistilanteisiin, kuten yksittäisten huoneiden (esim. kylpyhuoneet/sauna, B&B-majoitustilat, kuolinpesät) siivoukseen, juhlien jälkisiivoukseen tai vaikka yksittäisten huonekalujen täsmäpuhdistukseen. Erikoissiivoukset on helpointa luottaa asiantuntijoille – pyydä tarjous ja vakuuttaudu ammattimaisuudestamme tänään!"
+        },
+        {
+            "service_id": "porraskäytäväsiivoukset",
+            "icon": "Mop",
+            "service_name": "Taloyhtiöiden porraskäytäväsiivoukset",
+            "description": "Taloyhtiöiden porraskäytäväsiivoukset ovat keskeinen osa yhteisöllistä hyvinvointia. Tarjoamme ammattimaisia siivouspalveluita, jotka huolehtivat yhteistilojen puhtaudesta ja hygieniasta. Pyydä tarjous ja vakuuttaudu parhaista siivouspalveluista tänään!"
+        }
+    ]
+]

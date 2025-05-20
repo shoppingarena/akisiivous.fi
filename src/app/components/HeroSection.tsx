@@ -16,13 +16,26 @@ interface Service {
     description: string;
 }
 // Type guard to check if an item is a Section
-function isSection(item: Section | Record<string, unknown>): item is Section {
-    return item && typeof item === 'object' && 'section_id' in item;
+function isSection(item: unknown): item is Section {
+    return (
+        typeof item === 'object' &&
+        item !== null &&
+        'section_id' in item &&
+        typeof (item as Section).section_id === 'string'
+    );
 }
-
-// Type guard to check if an item is a Service array
-function isServiceArray(item: Service[] | Record<string, unknown>): item is Service[] {
-    return Array.isArray(item);
+// Type guard to check if an item is a Service
+function isService(item: unknown): item is Service {
+    return (
+        typeof item === 'object' &&
+        item !== null &&
+        'service_id' in item &&
+        typeof (item as Service).service_id === 'string'
+    );
+}
+// Type guard to check if an item is an array of Services
+function isServiceArray(item: unknown): item is Service[] {
+    return Array.isArray(item) && item.every(isService);
 }
 
 // Icon map to dynamically render icons based on name
