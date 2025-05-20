@@ -16,17 +16,17 @@ interface Service {
     description: string;
 }
 // Type guard to check if an item is a Section
-function isSection(item: any): item is Section {
+function isSection(item: Section | Record<string, unknown>): item is Section {
     return item && typeof item === 'object' && 'section_id' in item;
 }
 
 // Type guard to check if an item is a Service array
-function isServiceArray(item: any): item is Service[] {
+function isServiceArray(item: Service[] | Record<string, unknown>): item is Service[] {
     return Array.isArray(item);
 }
 
 // Icon map to dynamically render icons based on name
-const IconMap: Record<string, React.ComponentType<any>> = {
+const IconMap: Record<string, React.ComponentType<Record<string, unknown>>> = {
     WindowCleaningIcon,
     Trolley,
     Duster,
