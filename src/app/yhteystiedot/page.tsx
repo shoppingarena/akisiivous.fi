@@ -13,9 +13,10 @@ export default function ContactPage() {
 
                             <h3 className="text-teal-600 text-xl font-semibold mb-4">Osoite</h3>
                             <div className="text-gray-600">
-                                <p className="mb-2">Akisiivous</p>
+                                <p className="mb-2">AKI Siivouspalvelut</p>
                                 <p className="mb-2">Suovantie 63C</p>
                                 <p className="mb-2">20360 Turku</p>
+                                <p className='mb-2'>info@akisiivous.fi</p>
                             </div>
                         </div>
 

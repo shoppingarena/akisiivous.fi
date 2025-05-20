@@ -1,7 +1,8 @@
 // /components/MobileMenu.tsx
 "use client";
 import Link from "next/link";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useCallback } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import { CleanHome } from "../components/icons"
 
 interface NavItem {
@@ -34,6 +35,27 @@ export default function MobileMenu({
     serviceItems,
     scrollToSection
 }: MobileMenuProps) {
+
+    const router = useRouter();
+    const pathname = usePathname()
+
+    const handleScrollLink = useCallback(
+        (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+            const sectionId = href.split("#")[1];
+            e.preventDefault();
+
+            if (pathname === "/") {
+                scrollToSection(sectionId);
+            } else {
+                // Store sectionId in sessionStorage and redirect
+                sessionStorage.setItem("scrollTarget", sectionId);
+                router.push("/");
+            }
+        },
+        [pathname, router, scrollToSection]
+    );
+
+
     return (
         <div className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
             <div className="flex items-center pb-4">
@@ -68,14 +90,14 @@ export default function MobileMenu({
                                             <li key={serviceIdx}>
                                                 <Link
                                                     href={service.href}
-                                                    className="block w-full text-left text-slate-600 hover:text-teal-600"
+                                                    key={serviceIdx}
                                                     onClick={(e) => {
-                                                        e.preventDefault(); // 🛑 Stop native anchor scrolling
-                                                        setIsOpen(false); // close mobile menu
-                                                        setIsServicesDropdownOpen(false); // optional: close dropdown
-                                                        const sectionId = service.href.split("#")[1];
-                                                        scrollToSection(sectionId);
-                                                    }}
+                                                        handleScrollLink(e, service.href);
+                                                        setIsOpen(false)
+                                                    }
+                                                    }
+                                                    className="block w-full text-left text-slate-600 hover:text-teal-600"
+
                                                 >
                                                     {service.name}
                                                 </Link>

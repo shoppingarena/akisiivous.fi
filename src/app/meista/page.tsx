@@ -17,7 +17,7 @@ export default function MeistaPage() {
 
                                 <p className="mb-2">Me olemme nuori, kunnianhimoinen ja kärsivällinen tiimi, joka haluaa muuttaa siivouspalveluiden perinteitä. Uskomme siihen, että puhtaus on enemmän kuin vain pinta – se on osa hyvää elämää, turvallisuutta ja hyvinvointia.</p>
 
-                                <p className="mb-2">Meillä on suuret suunnitelmamme tarjota siivouspalveluja koko Suomessa, riippumatta siitä, onko kyseessä koti, liiketila, toimisto, tai erikoistilanne. Tarjoamme ammattimaisia ja ympäristöystävällisiä ratkaisuja, jotka soveltuvat kaikkiin tarpeisiin – kotisiivoukset, liiketila- ja toimistosiivoukset, erikoissiivoukset, desinfiointi ja pikasiivoukset, muuttosiivoukset, remontin loppusiivoukset sekä taloyhtiöiden porraskäytäväsiivoukset ja kuolinpesien raivaukset ja siivous.</p>
+                                <p className="mb-2">Meillä on suuret suunnitelmamme tarjota siivouspalveluja koko Suomessa, riippumatta siitä, onko kyseessä koti, liiketila, toimisto, tai erikoistilanne. Tarjoamme ammattimaisia ja ympäristöystävällisiä ratkaisuja, jotka soveltuvat kaikkiin tarpeisiin – kotisiivoukset, liiketila- ja toimistosiivoukset, erikoissiivoukset, desinfiointi ja pikasiivoukset, muuttosiivoukset, remontin loppusiivoukset sekä taloyhtiöiden porraskäytäväsiivoukset.</p>
                             </div>
                         </div>
 

@@ -32,12 +32,12 @@ export default function Navbar() {
         { name: "Kotisiivoukset", href: "/#kotisiivoukset" },
         { name: "Ikkunat", href: "/#ikkunat" },
         { name: "Erikoissiivoukset", href: "/#erikoissiivoukset" },
-        { name: "Desinfiointi ja pikasiivoukset", href: "/#desinfiointi" },
+        { name: "Desinfioinnit ja pikasiivoukset", href: "/#desinfiointi" },
         { name: "Muuttosiivoukset", href: "/#muuttosiivoukset" },
         { name: "Remontin loppusiivoukset", href: "/#remonttisiivoukset" },
         { name: "Liiketila- ja toimistosiivoukset", href: "/#toimistosiivoukset" },
         { name: "Taloyhtiöiden porraskäytäväsiivoukset", href: "/#porraskäytäväsiivoukset" },
-        { name: "Kuolinpesien raivaukset ja siivous", href: "/#kuolinpesät" },
+
     ];
 
     // Shared function for scrolling to sections
