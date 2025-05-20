@@ -1,7 +1,10 @@
+'use client'
 // /components/DesktopMenu.tsx
-"use client";
+
 import Link from "next/link";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useCallback } from "react";
+import { useRouter, usePathname } from "next/navigation";
+
 
 interface NavItem {
     name: string;
@@ -27,6 +30,27 @@ export default function DesktopMenu({
     serviceItems,
     scrollToSection
 }: DesktopMenuProps) {
+    const router = useRouter();
+    const pathname = usePathname()
+
+    const handleScrollLink = useCallback(
+        (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+            const sectionId = href.split("#")[1];
+            e.preventDefault();
+
+            if (pathname === "/") {
+                scrollToSection(sectionId);
+            } else {
+                // Store sectionId in sessionStorage and redirect
+                sessionStorage.setItem("scrollTarget", sectionId);
+                router.push("/");
+            }
+        },
+        [pathname, router, scrollToSection]
+    );
+
+
+
     return (
         <div className="hidden md:flex space-x-4">
             {/* Left side menu */}
@@ -63,12 +87,9 @@ export default function DesktopMenu({
                                         <Link
                                             href={service.href}
                                             key={serviceIdx}
-                                            onClick={(e) => {
-                                                e.preventDefault(); // 🛑 Stop native anchor scrolling
-                                                const sectionId = service.href.split("#")[1];
-                                                scrollToSection(sectionId);
-                                            }}
+                                            onClick={(e) => handleScrollLink(e, service.href)}
                                             className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-teal-600 hover:text-white"
+
                                         >
                                             {service.name}
                                         </Link>
@@ -83,7 +104,7 @@ export default function DesktopMenu({
             </ul>
 
 
-        </div>
+        </div >
 
     );
 }
