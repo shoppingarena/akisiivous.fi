@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/": {
+    "/yhteystiedot": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/yhteystiedot",
+      "dataRoute": "/yhteystiedot.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -73,7 +73,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/yhteystiedot": {
+    "/": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -86,8 +86,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/yhteystiedot",
-      "dataRoute": "/yhteystiedot.rsc",
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -101,8 +101,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "e8986326a8b9710df907d3ceee43bd2e",
-    "previewModeSigningKey": "51cb9a174cf4c9a806f148e1db518b44d12673d991aeed76955070f0659a8fcb",
-    "previewModeEncryptionKey": "cfa74784a494921b98732b4af093af9871fd801062e527530c9bfd6356857c3f"
+    "previewModeId": "65a1283d2eaae0f3ce0c945f8cb8df75",
+    "previewModeSigningKey": "aa41832dd07ba60a69cfb6add252038b8c87f2d813f2044583ebdea3b6195391",
+    "previewModeEncryptionKey": "4ddd7153ec07280331a0fab27a2982bc7180ba54589e5028982422ab74074f5b"
   }
 }
