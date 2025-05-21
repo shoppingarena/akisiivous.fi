@@ -66,7 +66,7 @@ export default function MobileMenu({
                     href="/" className="font-bold text-xl text-red-600 pt-4 ps-4">
                     <CleanHome />
                 </Link>
-                <button onClick={(e) => {
+                <button onClick={() => {
                     // handleScrollLink(e, '/');
                     setIsOpen(false)
                 }} className="absolute top-4 right-4 text-slate-600 hover:text-red-500">

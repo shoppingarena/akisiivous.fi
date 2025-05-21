@@ -1,58 +1,72 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/[root-of-the-server]__9a168d68._.css",
-      "static/chunks/f07ee_next_c3373aab._.js",
-      "static/chunks/src_app_components_11aa515d._.js",
-      "static/chunks/src_app_layout_tsx_be0f615f._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_727141ce._.js",
-      "static/chunks/f07ee_next_dist_compiled_072afd38._.js",
-      "static/chunks/f07ee_next_dist_client_5cf5dcf9._.js",
-      "static/chunks/f07ee_next_dist_eb86032f._.js",
-      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_42fd111b._.js"
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/_not-found/page-67d15dda8bdab78a.js"
     ],
-    "/meista/page": [
-      "static/chunks/[root-of-the-server]__9a168d68._.css",
-      "static/chunks/f07ee_next_c3373aab._.js",
-      "static/chunks/src_app_components_11aa515d._.js",
-      "static/chunks/src_app_layout_tsx_be0f615f._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_727141ce._.js",
-      "static/chunks/f07ee_next_dist_compiled_072afd38._.js",
-      "static/chunks/f07ee_next_dist_client_5cf5dcf9._.js",
-      "static/chunks/f07ee_next_dist_eb86032f._.js",
-      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_42fd111b._.js"
+    "/layout": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/css/fe9bd80db403e930.css",
+      "static/chunks/690-b904eed77ff76853.js",
+      "static/chunks/685-cc4d151b9bc79d0d.js",
+      "static/chunks/app/layout-8af76ab62864f8a1.js"
     ],
     "/page": [
-      "static/chunks/[root-of-the-server]__9a168d68._.css",
-      "static/chunks/f07ee_next_c3373aab._.js",
-      "static/chunks/src_app_components_11aa515d._.js",
-      "static/chunks/src_app_layout_tsx_be0f615f._.js",
-      "static/chunks/src_app_106bc0fc._.js",
-      "static/chunks/src_app_page_tsx_6ba44924._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_727141ce._.js",
-      "static/chunks/f07ee_next_dist_compiled_072afd38._.js",
-      "static/chunks/f07ee_next_dist_client_5cf5dcf9._.js",
-      "static/chunks/f07ee_next_dist_eb86032f._.js",
-      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_42fd111b._.js"
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/690-b904eed77ff76853.js",
+      "static/chunks/app/page-0c87022ab42175ea.js"
+    ],
+    "/meista/layout": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/meista/layout-0372e410f4638069.js"
+    ],
+    "/meista/page": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/meista/page-bb6a84674fd3f0cf.js"
+    ],
+    "/Nav/layout": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/685-cc4d151b9bc79d0d.js",
+      "static/chunks/app/Nav/layout-45c200d38a259ff7.js"
+    ],
+    "/Nav/page": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/Nav/page-2a99e18847e1a7d1.js"
+    ],
+    "/yhteystiedot/layout": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/yhteystiedot/layout-2516aed1783d4941.js"
     ],
     "/yhteystiedot/page": [
-      "static/chunks/[root-of-the-server]__9a168d68._.css",
-      "static/chunks/f07ee_next_c3373aab._.js",
-      "static/chunks/src_app_components_11aa515d._.js",
-      "static/chunks/src_app_layout_tsx_be0f615f._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_727141ce._.js",
-      "static/chunks/f07ee_next_dist_compiled_072afd38._.js",
-      "static/chunks/f07ee_next_dist_client_5cf5dcf9._.js",
-      "static/chunks/f07ee_next_dist_eb86032f._.js",
-      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_42fd111b._.js"
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-4893aaa832a09440.js",
+      "static/chunks/332-d030cb51e3212b50.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/yhteystiedot/page-e576fc0656db904e.js"
     ]
   }
 }
