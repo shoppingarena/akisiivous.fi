@@ -59,10 +59,17 @@ export default function MobileMenu({
     return (
         <div className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
             <div className="flex items-center pb-4">
-                <Link href="/" className="font-bold text-xl text-red-600 pt-4 ps-4">
+                <Link onClick={(e) => {
+                    handleScrollLink(e, '/');
+                    setIsOpen(false)
+                }}
+                    href="/" className="font-bold text-xl text-red-600 pt-4 ps-4">
                     <CleanHome />
                 </Link>
-                <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4 text-slate-600 hover:text-red-500">
+                <button onClick={(e) => {
+                    // handleScrollLink(e, '/');
+                    setIsOpen(false)
+                }} className="absolute top-4 right-4 text-slate-600 hover:text-red-500">
                     {/* Close Icon */}
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

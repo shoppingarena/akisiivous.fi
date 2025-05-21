@@ -81,7 +81,7 @@ export default function Navbar() {
                         {/* CTA */}
                         <div className="hidden lg:block">
                             <button className="bg-red-600 hover:bg-teal-600 text-white px-8 py-2 rounded-md text-xl font-medium">
-                                Tilaa siivous
+                                <a href="https://wa.me/+358445031813" target="_blank">Tilaa siivous</a>
                             </button>
                         </div>
                         {/* MOBILE: hamburger */}
