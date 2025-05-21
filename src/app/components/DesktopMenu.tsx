@@ -57,7 +57,7 @@ export default function DesktopMenu({
                 {navItems.map((item, idx) => (
                     <li
                         key={idx}
-                        className="relative group font-bold text-lg text-white hover:text-teal-600"
+                        className="relative group font-medium text-2xl text-white hover:text-teal-600"
                     >
                         {item.hasDropdown ? (
                             <>
@@ -80,7 +80,7 @@ export default function DesktopMenu({
                                 </div>
 
                                 {/* ✅ Dropdown placed correctly */}
-                                <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-md shadow-lg py-1 z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200">
+                                <div className="absolute left-0 top-full mt-2 w-64 font-medium text-lg bg-white rounded-md shadow-lg py-1 z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200">
 
                                     {serviceItems.map((service, serviceIdx) => (
                                         <Link

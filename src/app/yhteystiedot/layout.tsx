@@ -1,3 +1,15 @@
+import React from 'react'
+import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    alternates: {
+        canonical: '/yhteystiedot',
+    },
+    title: 'Yhteystiedot',
+    description: 'AKI Siivouspalvelut Turku'
+}
+
 export default function ContactLayout({
     children,
 }: {

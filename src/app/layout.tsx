@@ -13,8 +13,29 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-    title: 'Siivouspalvelut | akisiivous.fi',
-    description: 'Siivouspalvelut',
+    metadataBase: new URL('https://akisiivous.fi'),
+    alternates: {
+        canonical: '/',
+    },
+    title: {
+        template: '%s | AKI Siivouspalvelut - akisiivous.fi',
+        default: 'AKI Siivouspalvelut akisiivous.fi'
+    },
+    description: 'Haluatko säästää aikaa ja energiaa kotisiivouksesta? Tarjoamme ammattimaisia siivouspalveluita, joilla varmistamme, että kotisi pysyy aina puhtaana ja kunnossa.',
+    openGraph: {
+        title: 'AKI Siivouspalvelut - akisiivous.fi',
+        description: 'Haluatko säästää aikaa ja energiaa kotisiivouksesta? Tarjoamme ammattimaisia siivouspalveluita, joilla varmistamme, että kotisi pysyy aina puhtaana ja kunnossa.',
+        url: 'https://nextjs.org',
+        siteName: 'https://akisiivous.fi',
+        images: [
+            {
+                url: 'https://akisiivous.fi/public/og-1200x600.png', // Must be an absolute URL
+                width: 1200,
+                height: 600,
+            }],
+        locale: 'fi_FI',
+        type: 'website',
+    }
 }
 
 export default function RootLayout({

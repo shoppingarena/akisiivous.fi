@@ -71,7 +71,7 @@ export default function MobileMenu({
             </div>
             <ul className="flex flex-col h-full gap-4 p-4">
                 {navItems.map((item, idx) => (
-                    <li key={idx} className="text-lg text-slate-600 hover:text-teal-600">
+                    <li key={idx} className="font-medium text-xl text-slate-600 hover:text-teal-600">
                         {item.hasDropdown ? (
                             <div>
                                 <button
@@ -114,7 +114,7 @@ export default function MobileMenu({
                     </li>
                 ))}
                 <li className="mt-4">
-                    <button className="bg-red-600 text-white px-8 py-2 rounded-md hover:bg-red-500 font-bold">Tilaa siivous</button>
+                    <button className="bg-red-600 text-white px-8 py-2 rounded-md hover:bg-red-500 font-bold cursor-pointer">Tilaa siivous</button>
                 </li>
             </ul>
         </div>

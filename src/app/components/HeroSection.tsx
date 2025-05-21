@@ -106,7 +106,7 @@ export const ServiceComponent = () => {
                         {/* Section Header */}
                         <section id={section.section_id} className="pt-32 pb-24 bg-gradient-to-r from-teal-600 to-lime-500">
                             <div className="text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                                <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold text-white mb-8">{section.title}</h1>
+                                <h2 className="text-4xl sm:text-4xl md:text-6xl font-bold text-white mb-8">{section.title}</h2>
                                 <p className="text-xl text-white opacity-90 mb-12 max-w-3xl mx-auto">{section.text}</p>
                                 <a href="https://wa.me/+358445031813" target="_blank"
                                     className="bg-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:text-white hover:bg-teal-600 transition duration-300">
@@ -117,7 +117,7 @@ export const ServiceComponent = () => {
 
                         {/* Services Cards */}
                         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                            <h2 className="text-teal-600 text-3xl font-bold text-center mb-12">{section.service_title}</h2>
+                            <h3 className="text-teal-600 text-3xl font-bold text-center mb-12">{section.service_title}</h3>
                             <div className="grid md:grid lg:grid-cols-3 gap-8">
                                 {services.map((service) => {
                                     // Dynamically render the correct icon component
