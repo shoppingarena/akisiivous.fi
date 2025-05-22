@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import { ThemeProvider } from './components/ThemeProvider'
 import Navbar from './components/Navbar'
+import WhatsAppButton from './components/WhatsAppButton'
 import Footer from './components/Footer'
 // These styles apply to every route in the application
 import './globals.css'
@@ -49,6 +50,7 @@ export default function RootLayout({
                 <ThemeProvider>
                     <Navbar />
                     <main className="flex-grow p-4 overflow-y-auto">{children}</main>
+                    <WhatsAppButton />
                     <Footer />
                 </ThemeProvider>
             </body>

@@ -146,7 +146,7 @@ export function Call() {
         />
     );
 }
-export function WhatsApp() {
+export function WhatsAppIcon() {
     return (
         <ImageComponent
             src="/icons-animated/whatsapp.png"
