@@ -22,12 +22,6 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
-      "page": "/Nav",
-      "regex": "^/Nav(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Nav(?:/)?$"
-    },
-    {
       "page": "/_not-found",
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},

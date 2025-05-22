@@ -25,54 +25,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/yhteystiedot": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/yhteystiedot",
-      "dataRoute": "/yhteystiedot.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/Nav": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/Nav",
-      "dataRoute": "/Nav.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -96,13 +48,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/yhteystiedot": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/yhteystiedot",
+      "dataRoute": "/yhteystiedot.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "c497389b336dbb42e738211c3e9f2c9b",
-    "previewModeSigningKey": "764c2d0eb2cd444b73a3c5564a47570e865a9c8394f21814093b5213f3f9e2c4",
-    "previewModeEncryptionKey": "87b6761e22152274cb7e684ea56d0646b6c45e72c582ad7826f7ad8e3eba3aa9"
+    "previewModeId": "0dd4fc41fafde00947e90b59761476ff",
+    "previewModeSigningKey": "8b3fbd1cc5cfc75ac0b0e2015735b30b14e71a0b1f784e24ad409400f7cbe0d7",
+    "previewModeEncryptionKey": "1355b408d92a4b66ee755567ec8ce1a6adfd80d83eb27099410f5de309b52323"
   }
 }

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://akisiivous.fi
+
+# Sitemaps
+Sitemap: https://akisiivous.fi/sitemap.xml

@@ -3,6 +3,7 @@ export default {
     siteUrl: process.env.SITE_URL || 'https://akisiivous.fi',
     generateRobotsTxt: true, // (optional)
     changefreq: 'weekly',
+    //sourceDir: '/out/',
     // ...other options
 };
 
