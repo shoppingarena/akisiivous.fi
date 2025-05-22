@@ -4,6 +4,12 @@
 
 Source: [https://www.npmjs.com/package/next-sitemap]
 
+1. Sitemap is generated automaticaly during pnpm run build.
+
+2. Check sitemap file, if there are no changes, delete .next repeat 1.
+
+pnpm run postbuild
+
 ## Automatically Copying Traced Files
 
 Next.js can automatically create a standalone folder that copies only the necessary files for a production deployment including select files in node_modules.
