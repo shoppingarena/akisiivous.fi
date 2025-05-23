@@ -1,6 +1,7 @@
 import React from 'react'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
+//import { LocalBusiness } from 'schema-dts'
 import Script from 'next/script'
 import { ThemeProvider } from './components/ThemeProvider'
 import Navbar from './components/Navbar'
@@ -48,14 +49,37 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
+    const schemaData = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "AKI Siivouspalvelut",
+        "serviceType": "Siivouspalvelut",
+        "areaServed": {
+            "@type": "City",
+            "name": "Turku"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Turku",
+            "addressRegion": "Turku",
+            "postalCode": "20360",
+            "streetAddress": "Suovantie 63C"
+        },
+        "description": "Tarjoamme ammattimaisia siivouspalveluita, joilla varmistamme, että kotisi pysyy aina puhtaana ja kunnossa.",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "url": "https://akisiivous.fi",
+        "telephone": "+358 445 031 813"
+    }
     return (
         <>
             <html lang="fi" className={inter.className} suppressHydrationWarning>
                 <head>
                     <Script
-                        src="/schema.json"
+                        id="schema-org"
                         type="application/ld+json"
-
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify(schemaData)
+                        }}
                     />
                 </head>
                 <body className="bg-white text-gray-900 min-h-screen flex flex-col">
