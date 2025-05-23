@@ -116,7 +116,7 @@ export const ServiceComponent = () => {
                         </section>
 
                         {/* Services Cards */}
-                        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                        <div className="container mx-auto px-1 sm:px-4 lg:px-8 py-16">
                             <h3 className="text-teal-600 text-3xl font-bold text-center mb-12">{section.service_title}</h3>
                             <div className="grid md:grid lg:grid-cols-3 gap-8">
                                 {services.map((service) => {

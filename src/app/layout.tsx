@@ -49,7 +49,7 @@ export default function RootLayout({
             <body className="bg-white text-gray-900 min-h-screen flex flex-col">
                 <ThemeProvider>
                     <Navbar />
-                    <main className="flex-grow p-4 overflow-y-auto">{children}</main>
+                    <main className="flex-grow sm:px-4 py-4 overflow-y-auto">{children}</main>
                     <WhatsAppButton />
                     <Footer />
                 </ThemeProvider>
