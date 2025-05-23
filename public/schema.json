@@ -1,0 +1,27 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Services",
+    "serviceType": "Siivouspalvelut",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "AKI Siivouspalvelut"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Turku"
+    },
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Turku",
+        "addressRegion": "Turku",
+        "postalCode": "20360",
+        "streetAddress": "Suovantie 63C"
+    },
+    "description": "Tarjoamme ammattimaisia siivouspalveluita, joilla varmistamme, että kotisi pysyy aina puhtaana ja kunnossa.",
+    "name": "AKI Siivouspalvelut",
+    "openingHours": {
+        "Ma-Su": "24/7"
+    },
+    "url": "https://akisiivous",
+    "telephone": "+358 445 031 813"
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { ThemeProvider } from './components/ThemeProvider'
 import Navbar from './components/Navbar'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -37,23 +38,35 @@ export const metadata: Metadata = {
         locale: 'fi_FI',
         type: 'website',
     }
+
 }
 
+
 export default function RootLayout({
+
     children,
 }: {
     children: React.ReactNode
 }) {
     return (
-        <html lang="fi" className={inter.className} suppressHydrationWarning>
-            <body className="bg-white text-gray-900 min-h-screen flex flex-col">
-                <ThemeProvider>
-                    <Navbar />
-                    <main className="flex-grow sm:px-4 py-4 overflow-y-auto">{children}</main>
-                    <WhatsAppButton />
-                    <Footer />
-                </ThemeProvider>
-            </body>
-        </html>
+        <>
+            <html lang="fi" className={inter.className} suppressHydrationWarning>
+                <head>
+                    <Script
+                        src="/schema.json"
+                        type="application/ld+json"
+
+                    />
+                </head>
+                <body className="bg-white text-gray-900 min-h-screen flex flex-col">
+                    <ThemeProvider>
+                        <Navbar />
+                        <main className="flex-grow sm:px-4 py-4 overflow-y-auto">{children}</main>
+                        <WhatsAppButton />
+                        <Footer />
+                    </ThemeProvider>
+                </body>
+            </html>
+        </>
     )
 }
