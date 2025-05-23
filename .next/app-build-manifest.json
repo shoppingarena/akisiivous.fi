@@ -25,20 +25,6 @@
       "static/chunks/690-999c1a6a6349a5a9.js",
       "static/chunks/app/page-622909d9356ea73e.js"
     ],
-    "/yhteystiedot/layout": [
-      "static/chunks/webpack-a8fd0294a83a04f6.js",
-      "static/chunks/09f5f10c-15fae6c529be258f.js",
-      "static/chunks/332-3f1d748735a19966.js",
-      "static/chunks/main-app-5f0879929ba06582.js",
-      "static/chunks/app/yhteystiedot/layout-508df321e8846723.js"
-    ],
-    "/yhteystiedot/page": [
-      "static/chunks/webpack-a8fd0294a83a04f6.js",
-      "static/chunks/09f5f10c-15fae6c529be258f.js",
-      "static/chunks/332-3f1d748735a19966.js",
-      "static/chunks/main-app-5f0879929ba06582.js",
-      "static/chunks/app/yhteystiedot/page-dc7fe7a65c79b9a8.js"
-    ],
     "/meista/layout": [
       "static/chunks/webpack-a8fd0294a83a04f6.js",
       "static/chunks/09f5f10c-15fae6c529be258f.js",
@@ -52,6 +38,20 @@
       "static/chunks/332-3f1d748735a19966.js",
       "static/chunks/main-app-5f0879929ba06582.js",
       "static/chunks/app/meista/page-1c7248cbf315dd2a.js"
+    ],
+    "/yhteystiedot/layout": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-15fae6c529be258f.js",
+      "static/chunks/332-3f1d748735a19966.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/yhteystiedot/layout-508df321e8846723.js"
+    ],
+    "/yhteystiedot/page": [
+      "static/chunks/webpack-a8fd0294a83a04f6.js",
+      "static/chunks/09f5f10c-15fae6c529be258f.js",
+      "static/chunks/332-3f1d748735a19966.js",
+      "static/chunks/main-app-5f0879929ba06582.js",
+      "static/chunks/app/yhteystiedot/page-dc7fe7a65c79b9a8.js"
     ]
   }
 }

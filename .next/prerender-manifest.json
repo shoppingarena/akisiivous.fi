@@ -1,30 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/meista": {
       "experimentalBypassFor": [
         {
@@ -40,6 +16,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/meista",
       "dataRoute": "/meista.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -77,8 +77,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "6a1490c7f85a0555a0e3923da8daca6e",
-    "previewModeSigningKey": "376b1ea361d26eb6b2001e8d26ab9d5b500cce8140954fda44960e1febaf9c2f",
-    "previewModeEncryptionKey": "ae4365e6ea82ebb8e360083295f56e1e52e72c9cdb8a6ade4076208e4584cac1"
+    "previewModeId": "fffc72dbe3ba45873c739352af4ef153",
+    "previewModeSigningKey": "e6adf14e792d7d4ca3b980a85b16875b47be245c0ce2744b2427051f17c3d6e0",
+    "previewModeEncryptionKey": "65b16e368ad15de91d33b744816f232cccc396eefedb67559246319474d9d2f7"
   }
 }
