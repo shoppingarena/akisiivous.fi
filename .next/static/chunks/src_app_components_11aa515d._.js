@@ -122,6 +122,7 @@ __turbopack_context__.s({
     "CleanHome": (()=>CleanHome),
     "Cleaning": (()=>Cleaning),
     "Duster": (()=>Duster),
+    "FacebookIcon": (()=>FacebookIcon),
     "Hand": (()=>Hand),
     "ImageComponent": (()=>ImageComponent),
     "Mop": (()=>Mop),
@@ -318,7 +319,21 @@ function WhatsAppIcon() {
     }, this);
 }
 _c12 = WhatsAppIcon;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12;
+function FacebookIcon() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ImageComponent, {
+        src: "facebook_64.png",
+        alt: "Facebook Icon 64px",
+        width: 45,
+        height: 45,
+        unoptimized: true
+    }, void 0, false, {
+        fileName: "[project]/src/app/components/icons.tsx",
+        lineNumber: 162,
+        columnNumber: 9
+    }, this);
+}
+_c13 = FacebookIcon;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13;
 __turbopack_context__.k.register(_c, "ImageComponent");
 __turbopack_context__.k.register(_c1, "WindowCleaningIcon");
 __turbopack_context__.k.register(_c2, "Trolley");
@@ -332,6 +347,7 @@ __turbopack_context__.k.register(_c9, "Hand");
 __turbopack_context__.k.register(_c10, "CleanHome");
 __turbopack_context__.k.register(_c11, "Call");
 __turbopack_context__.k.register(_c12, "WhatsAppIcon");
+__turbopack_context__.k.register(_c13, "FacebookIcon");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }

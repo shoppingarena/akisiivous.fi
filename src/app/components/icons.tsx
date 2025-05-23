@@ -157,3 +157,14 @@ export function WhatsAppIcon() {
         />
     );
 }
+export function FacebookIcon() {
+    return (
+        <ImageComponent
+            src="facebook_64.png"
+            alt="Facebook Icon 64px"
+            width={45}
+            height={45}
+            unoptimized={true}
+        />
+    )
+}
