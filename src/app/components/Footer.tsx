@@ -1,10 +1,11 @@
 'use client'
 import { useCallback } from 'react';
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter, usePathname } from "next/navigation";
 import { serviceItems } from './ServiceItems'
-import { ArrowUp, EarthIcon, LinkedinIcon, TwitterIcon } from 'lucide-react'
-import { FacebookIcon } from './icons'
+//import { ArrowUp, EarthIcon, LinkedinIcon, TwitterIcon } from 'lucide-react'
+//import { FacebookIcon } from './icons'
 {/*
 const socialLinks = [
     {
@@ -62,7 +63,7 @@ const Footer = () => {
     const pathname = usePathname()
 
     // Shared function for scrolling to sections
-    const scrollToSection = (sectionId: string): void => {
+    const scrollToSection = useCallback((sectionId: string): void => {
         const element = document.getElementById(sectionId);
         if (element) {
             const yOffset = -133; // 138 (navbar height) - 5px visual gap
@@ -70,7 +71,7 @@ const Footer = () => {
 
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
-    };
+    }, []);
 
     const handleScrollLink = useCallback(
         (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
@@ -88,27 +89,22 @@ const Footer = () => {
         [pathname, router, scrollToSection]
     );
 
-
-
-
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
-
     return (
         <>
             <footer className="bg-teal-600 text-white">
                 <div className="mx-auto max-w-7xl px-4">
                     <div className="flex flex-wrap justify-evenly gap-6 py-12">
                         <div className="">
-                            <a href="/" className="mb-8 flex items-center gap-5 text-white">
-                                <img
+                            <Link href="/" className="mb-8 flex items-center gap-5 text-white hover:text-lime-300">
+                                <Image
                                     src="/icons-animated/cleaning-service.png"
+                                    width={35}
+                                    height={35}
                                     className="h-8"
                                     alt="Logo"
                                 />
-                                <h6 className="text-xl font-semibold tracking-wider">AKI Siivouspalvelut</h6>
-                            </a>
+                                <h6 className="text-xl font-semibold  tracking-wider">AKI Siivouspalvelut</h6>
+                            </Link>
                             <address className="mt-3 text-base font-normal text-white">
                                 <p className="mt-3 max-w-64">{contact.address}</p>
                                 <p className="mt-3">{contact.phone}</p>
@@ -151,7 +147,7 @@ const Footer = () => {
                                 {serviceItems.map(({ name, href }) => (
                                     <li
                                         key={name}
-                                        className="mt-3 text-base font-normal text-white transition-all duration-150 ease-in hover:text-white hover:underline hover:decoration-lime-300 hover:underline-offset-8"
+                                        className="mt-3 text-base font-normal text-white transition-all duration-150 ease-in hover:underline hover:decoration-lime-300 hover:underline-offset-8"
                                     >
                                         <Link href={href} onClick={(e) => handleScrollLink(e, href)}>{name}</Link>
                                     </li>

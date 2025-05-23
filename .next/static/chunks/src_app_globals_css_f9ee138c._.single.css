@@ -72,6 +72,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-500: oklch(63.7% .237 25.331);
     --color-red-600: oklch(57.7% .245 27.325);
+    --color-lime-100: oklch(96.7% .067 122.328);
+    --color-lime-200: oklch(93.8% .127 124.321);
     --color-lime-300: oklch(89.7% .196 126.665);
     --color-lime-500: oklch(76.8% .233 130.85);
     --color-green-500: oklch(72.3% .219 149.579);
@@ -693,10 +695,6 @@
     gap: calc(var(--spacing) * 2);
   }
 
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
-
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -780,16 +778,8 @@
     background-color: #0af;
   }
 
-  .bg-\[\#2E3447\] {
-    background-color: #2e3447;
-  }
-
   .bg-\[\#25D366\] {
     background-color: #25d366;
-  }
-
-  .bg-\[\#191F33\] {
-    background-color: #191f33;
   }
 
   .bg-black {
@@ -1069,10 +1059,6 @@
     color: var(--color-white);
   }
 
-  .underline {
-    text-decoration-line: underline;
-  }
-
   .opacity-0 {
     opacity: 0;
   }
@@ -1220,6 +1206,24 @@
   }
 
   @media (hover: hover) {
+    .hover\:text-lime-100:hover {
+      color: var(--color-lime-100);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-lime-200:hover {
+      color: var(--color-lime-200);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-lime-300:hover {
+      color: var(--color-lime-300);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:text-red-500:hover {
       color: var(--color-red-500);
     }
@@ -1299,12 +1303,6 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:grid-cols-\[40fr_30fr_30fr\] {
-      grid-template-columns: 40fr 30fr 30fr;
-    }
-  }
-
-  @media (width >= 40rem) {
     .sm\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
     }
@@ -1344,12 +1342,6 @@
   @media (width >= 48rem) {
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:grid-cols-\[40fr_30fr_30fr_30fr\] {
-      grid-template-columns: 40fr 30fr 30fr 30fr;
     }
   }
 
