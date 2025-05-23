@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { serviceItems } from './ServiceItems'
 import { ArrowUp, EarthIcon, LinkedinIcon, TwitterIcon } from 'lucide-react'
 import { FacebookIcon } from './icons'
-
+{/*
 const socialLinks = [
     {
         name: 'LinkedIn',
@@ -28,6 +28,7 @@ const socialLinks = [
         icon: <EarthIcon className="size-6" />,
     },
 ]
+*/}
 {/*
 const support = {
     title: 'Support',
@@ -50,16 +51,6 @@ const quickLinks = {
     ],
 }
 */}
-const category = {
-    title: 'Palvelut',
-    items: [
-        { label: 'Graphics', href: '' },
-        { label: 'Programming', href: '' },
-        { label: 'eCommerce', href: '' },
-        { label: 'Freelancing', href: '' },
-    ],
-}
-
 const contact = {
     address: 'Suovantie 63C, 20360 Turku',
     phone: 'Puhelin: +358 445 031 813',
